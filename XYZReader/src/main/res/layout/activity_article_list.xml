@@ -1,8 +1,13 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
@@ -21,12 +26,18 @@
             android:paddingBottom="28dp" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <FrameLayout
+    <android.support.design.widget.AppBarLayout
         android:id="@+id/toolbar_container"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:background="?colorPrimary"
         android:elevation="8dp">
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/toolbar_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="112dp"-->
+        <!--android:background="?colorPrimary"-->
+        <!--android:elevation="8dp">-->
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -44,6 +55,8 @@
                 android:contentDescription="@string/app_name" />
 
         </android.support.v7.widget.Toolbar>
-    </FrameLayout>
+        <!--</FrameLayout>-->
+    </android.support.design.widget.AppBarLayout>
+    <!--</FrameLayout>-->
 
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
