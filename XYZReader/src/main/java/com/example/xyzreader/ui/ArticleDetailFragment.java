@@ -181,7 +181,10 @@ public class ArticleDetailFragment extends Fragment implements
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
-        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
+//        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
+        //this font was from http://www.free-fonts-download.com/basic/kalypsa-font
+        //It is free for pernsonal Use, designer is Steve Gardner
+        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Kalypsa-Medium.ttf"));
 
         if (mCursor != null) {
             mRootView.setAlpha(0);
