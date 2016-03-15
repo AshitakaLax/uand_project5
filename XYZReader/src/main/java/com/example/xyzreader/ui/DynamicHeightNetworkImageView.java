@@ -27,7 +27,7 @@ public class DynamicHeightNetworkImageView extends NetworkImageView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);//todo add the 2:3 aspect ratio here
         int measuredWidth = getMeasuredWidth();
         setMeasuredDimension(measuredWidth, (int) (measuredWidth / mAspectRatio));
     }
