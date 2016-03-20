@@ -209,6 +209,10 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
+//                                mPhotoView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+//                                mPhotoView.setScaleType(ImageView.ScaleType.CENTER);
+//                                mPhotoView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                                mPhotoView.setScaleType(ImageView.ScaleType.FIT_XY);
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);
                                 updateStatusBar();
